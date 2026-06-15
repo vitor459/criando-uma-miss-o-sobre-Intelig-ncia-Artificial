@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Quiz: Desafio Front-End</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header>
+        <h1 id="titulo-missao">Missão Dev: O Quiz</h1>
+        <p>Aprimore sua estrutura, lógica e design interagindo com o protótipo abaixo.</p>
+    </header>
+
+    <!-- Conteúdo Principal da Página -->
+    <main>
+        
+        <!-- Área Interativa (Protótipo do App) -->
+        <section id="dashboard">
+            <h2 id="pergunta-titulo">Carregando pergunta...</h2>
+            
+            <!-- Contêiner onde o JavaScript injetará as alternativas -->
+            <div id="container-alternativas"></div>
+
+            <p class="dica-teclado">💡 Dica: Você também pode responder apertando as teclas <b>1</b>, <b>2</b> ou <b>3</b>.</p>
+        </section>
+
+        <!-- Seção de Resultado Final (Inicia escondida) -->
+        <section id="tela-resultado" class="escondido">
+            <h2 id="mensagem-resultado"></h2> 
+            <div id="feedback-visual"></div>
+            <button id="btn-reiniciar" onclick="reiniciarQuiz()">Tentar Novamente</button>
+        </section>
+
+    </main>
+
+    <!-- Rodapé da Página -->
+    <footer>
+        <p>&copy; 2026 Meu Protótipo Criativo. Desenvolvido no desafio de programação.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
