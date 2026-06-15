@@ -1,0 +1,137 @@
+/* 1. Reset e Estilo Geral do Corpo */
+body {
+    background-color: #1a1a2e; /* Fundo escuro moderno */
+    color: #e2e8f0;            /* Texto claro para dar contraste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Centraliza todo o conteúdo na tela */
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* 2. Destacando os Títulos e Textos */
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #4f46e5;            /* Roxo vibrante inicial */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    transition: all 0.3s ease; /* Transição para o evento do mouse */
+}
+
+h2 {
+    color: #06b6d4;            /* Ciano para subcomponentes */
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 3. Estilizando o Painel e o Contêiner das Alternativas */
+#dashboard {
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+#container-alternativas {
+    display: flex;
+    flex-direction: column;    /* Alternativas uma embaixo da outra */
+    gap: 15px;                 /* Espaçamento fixo entre botões */
+    margin-bottom: 20px;
+}
+
+/* 4. Estilização dos Botões */
+.btn-alternativa {
+    background-color: #1f4068; 
+    color: #ffffff;
+    border: 2px solid #4f46e5; 
+    border-radius: 8px;        
+    padding: 15px 20px;        
+    font-size: 1rem;
+    text-align: left;          
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+/* Interatividade: Hover (Passar o mouse) */
+.btn-alternativa:hover {
+    background-color: #4f46e5; 
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4); 
+}
+
+/* Desafio do Botão Vermelho ao Clicar (Resposta Errada) */
+.btn-alternativa.clicado-errado {
+    background-color: #dc2626 !important; /* Vermelho vibrante */
+    border-color: #991b1b !important;
+    color: #ffffff;
+}
+
+/* Desafio do Botão Verde ao Clicar (Resposta Correta) */
+.btn-alternativa.clicado-correto {
+    background-color: #10b981 !important; /* Verde vibrante */
+    border-color: #065f46 !important;
+    color: #ffffff;
+}
+
+/* 5. Telas de Estado Final e Utilitários */
+#tela-resultado {
+    text-align: center;
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+#btn-reiniciar {
+    background-color: #06b6d4;
+    color: #1a1a2e;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.dica-teclado {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-align: center;
+    margin: 0;
+}
+
+.escondido {
+    display: none !important; /* Esconde elementos */
+}
+
+/* Mudança de cor dinâmica do fundo da página */
+body.resultado-sucesso {
+    background-color: #064e3b; 
+    color: #34d399;
+    transition: background-color 0.5s ease;
+}
+
+body.resultado-revisar {
+    background-color: #451a03; 
+    color: #fb923c;
+    transition: background-color 0.5s ease;
+}
+
+footer {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 10px;
+}
